@@ -1,3 +1,17 @@
-// Ejercicio While 6: Búsqueda en Array
-// Crea un programa que use while para buscar un elemento específico en un array de 15 números aleatorios. 
-// Muestra en qué posición se encontró.
+let nombres = ["Luisa","Paula", "Monica", "Fernanda", "Elizabeth"];
+let buscado = "Fernanda";
+let index = 0;
+let encontrado = false;
+
+while (index < nombres.length) {
+  if (nombres[index] === buscado) {
+    console.log(`${buscado} encontrado en posición ${index}`);
+    encontrado = true;
+    break;
+  }
+  index++;
+}
+
+if (!encontrado) {
+  console.log("Nombre no encontrado; NO EXISTE.");
+}
